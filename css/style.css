@@ -1,0 +1,968 @@
+body{ 
+  	margin:0; 
+ 	padding:0;
+	font-family: 'Lato', sans-serif;
+	color:#656565;
+	background: #fff;
+}
+*{
+	margin:0; 
+	padding:0; 
+	box-sizing: border-box;
+}
+.container {
+    margin: auto;
+    padding: 0 15px;
+    max-width: 1300px;
+    width: 100%;
+}
+img{ 
+	 border:none; 
+	 outline:none;
+	 width: 100%;
+}
+a{ 
+	text-decoration:none;
+	font-family: 'Lato', sans-serif;
+}
+a:hover{
+	text-decoration:none;
+}
+li{ 
+	list-style:none;
+}
+
+input, textarea, select{
+	outline:none;
+	font-family: 'Roboto', sans-serif;
+}
+.title {
+    font-size: 54px;
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    padding: 74px 0;
+}
+.sub_title {
+    font-size: 30px;
+    color: #000;
+}
+
+.des {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #5f5f5f;
+}
+button:focus{
+	outline: none;
+}
+.scrollToTop img {
+    max-width: 60px;
+}
+
+.scrollToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+}
+
+.view_btn {
+    background: #2879fe;
+    color: #fff;
+    border-radius: 25px;
+    padding: 14px 38px;
+    font-size: 18px;
+}
+.view_btn img {
+    width: 9px;
+    margin-left: 5px;
+}
+.view_btn:hover {
+	 background: #2872ec;
+}
+/* Global Css */
+
+	
+/* Start Header */
+
+.header_src.position-sticky {
+    top: 0;
+	z-index: 9;
+}
+.top_header {
+    overflow: hidden;
+	background: #000000;
+}
+
+.top_header .h_contact li a img {
+    width: 18px;
+}
+.top_header .h_social li a img {
+    width: 14px;
+}
+
+
+.nav_menu ul li a {
+    color: #000 !important;
+}
+.nav_menu .navbar-nav li a {
+    padding: 0 24px !important;
+    font-size: 16px;
+}
+.nav_menu .navbar-nav li a:hover, .nav_menu .navbar-nav li.active a {
+    color: #bf9445 !important;
+}
+
+.nav_menu button {
+    background: #bf9445;
+}
+/* End Header */
+
+
+/* Start Footert Sec */
+.footert_sec{
+    background: #fff;
+    padding: 80px 0;
+    overflow: hidden;
+}
+.footert_sec img {
+    width: auto;
+    margin-right: 10px;
+}
+
+.footert_sec .f_title {
+    font-size: 16px;
+}
+
+.about_us .des {
+    color: #504c4c;
+    font-size: 16px;
+    line-height: 30px;
+}
+ .footert_sec ul li a {
+    color: #504c4c;
+}
+.footert_bottom{
+	background: #000;
+}
+.footert_bottom .border-right {
+    border-right: 1px solid #656541 !important;
+}
+/* End Footert Sec */
+
+/*====== Home Page ======*/
+
+
+.banner_sec{
+	background-repeat: no-repeat !important;
+    background-position: center center !important;
+	background-size: cover !important;
+	height: 790px;
+}
+/* Start About Sec */
+.about_sec {
+	margin: 80px auto 0;
+    background: url(../images/about_image.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-size: 100%;
+	height: 560px;
+}
+.about_sec .about_content {
+    width: 46%;
+    flex-direction: column;
+    min-height: 550px;
+}
+.des .read_more{
+	color: #c38617;
+}
+/* End About Sec */
+
+
+/* Start Fashion Sec */
+.fashion_sec {
+    z-index: -1;
+}
+.fashion_sec .fashion_photo {
+	display: block;
+	height: 640px;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: top !important;
+	position: relative;
+	z-index: 0;
+}
+.fashion_sec .fashion_photo:after {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	z-index: -1;
+}
+.fashion_sec .fashion_photo:before {
+    content: "";
+    background: url(../images/catagory_border.png);
+    background-position: center center!important;
+    position: absolute;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    left: 0;
+    right: 0;
+    margin: auto;
+	z-index: 99;
+}
+.fashion_sec .fashion_photo:hover:before {
+	 content: "";
+    background: url(../images/catagory_border_hover.png);
+    background-position: center center!important;
+    position: absolute;
+    height: 100%;
+    background-repeat: no-repeat !important;
+    left: 0;
+    right: 0;
+    margin: auto;
+	z-index: 99;
+}
+.fashion_sec .text_content .fashion_title {
+    font-size: 18px;
+    letter-spacing: 9px;
+    height: 639px;
+}
+.fashion_sec .text_content .fashion_title span {
+    font-size: 44px;
+}
+.fashion_sec .slick-arrow {
+    display: none !important;
+}
+.fashion_sec .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.fashion_sec .slick-dots li button {
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    text-indent: 16px;
+    overflow: hidden;
+    margin: 0 3px;
+    border: none;
+}
+.fashion_sec .slick-dots li.slick-active button {
+	background: #bf9445;
+}
+/* End Fashion Sec */
+
+
+/* Start Seller Sec */
+.featured_sec {
+    margin: 70px auto;
+}
+.featured_sec .title {
+    font-size: 30px;
+}
+.featured_sec .sub_title {
+    color: #bf9445;
+    font-size: 16px;
+}
+.featured_sec .featured_content {
+    padding: 5px;
+    border: 1px solid #eaeaea;
+}
+.featured_sec .featured_content .seller_photo {
+    height: 600px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+.featured_sec .featured_content .featured_title {
+    font-size: 16px;
+    color: #fff;
+    background: #060606;
+    padding: 10px 0;
+    text-align: center;
+}
+/* End Seller Sec */
+
+
+.special_discount {
+    background: url(../images/discount_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+	padding: 60px 0;
+}
+.special_discount .title {
+    font-size: 30px;
+}
+.special_discount .des {
+    width: 34%;
+}
+.special_discount .des {
+    width: 34%;
+    line-height: 24px;
+}
+.special_discount .discount_from  .form-group {
+    width: 30%;
+}
+.special_discount .discount_from .discount_input {
+    padding: 15px;
+    width: 100%;
+    height: 48px;
+}
+.special_discount .discount_from .discount_input:focus{
+	box-shadow: none;
+}
+.special_discount .discount_from .now_button {
+    background: #c38617;
+    padding: 12px;
+}
+.special_discount .discount_from .now_button:hover {
+    background: #d29422;
+}
+
+.special_discount .discount_from .now_button:not(:disabled):not(.disabled):active{
+	 background: #c38617 !important;
+}
+.special_discount .discount_from .now_button:focus, .special_discount .discount_from .now_button:not(:disabled):not(.disabled):active:focus{
+	box-shadow: none;
+}
+.social_coment {
+    overflow: hidden;
+}
+.social_sec .social_icon {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.social_sec .social_icon.fb_icon {
+    background-image: url(../images/b_fb_icon.png);
+}
+.social_sec .social_icon.fb_icon:hover{
+	background-image: url(../images/b_fb_h_icon.png);
+}
+.social_sec .social_icon.block_icon{
+	background-image: url(../images/b_blog_icon.png);
+}
+.social_sec .social_icon.block_icon:hover{
+	background-image: url(../images/b_blog_h_icon.png);
+}
+.social_sec .social_icon.pinter_icon {
+    background-image: url(../images/b_pintrest_icon.png);
+}
+.social_sec .social_icon.pinter_icon:hover {
+	background-image: url(../images/b_pintrest_h_icon.png);
+}
+.social_sec .social_icon.instagram_icon{
+	background-image: url(../images/f_instagram_icon.png);
+}
+.social_sec .social_icon.instagram_icon:hover{
+	background-image: url(../images/f_instagram_h_icon.png);
+}
+
+
+
+/* Get Touch */
+.get_touch {
+	padding: 90px 0;
+    background: url(../images/contact_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.get_touch .sub_title {
+    text-align: center;
+    border-left: none;
+    color: #fff;
+    font-size: 54px;
+    padding: 0px 0 30px;
+}
+.get_touch .call_btn {
+    background: #000000;
+    border-radius: 54px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 40px;
+    border: 3px solid #c38616;
+    color: #fff;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin: 0px 20px;
+}
+.get_touch .call_btn img {
+    width: auto;
+    margin-right: 16px;
+    border: 1px solid #c38616;
+    border-radius: 50%;
+    padding: 4px;
+}
+.get_touch .call_btn:not(:disabled):not(.disabled):active, .call_btn:hover, .call_btn:not(:disabled):not(.disabled):active{
+	background: #c38616;
+	border: 3px solid #c38616;
+}
+.get_touch .call_btn:not(:disabled):not(.disabled):active:focus{
+	box-shadow: none;
+}
+/* Get Touch */
+
+
+/*====== Home Page ======*/
+
+
+/*====== Contact Page ======*/
+.contact_us .contact_content .contact_sec {
+    background: #000;
+	padding: 64px 0;
+}
+.contact_us .contact_content .contact_sec .contact_form{
+	padding: 60px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+.contact_us .contact_content .contact_form .form-control {
+    border-radius: 25px;
+    height: 48px;
+    background: #151515;
+    border: none;
+    padding: 0 20px;
+}
+.contact_us .contact_content .contact_form .form-control:focus{
+	box-shadow: none;
+}
+.contact_us .contact_content .contact_form textarea {
+    border-radius: 0 !important;
+    background: none !important;
+    border-bottom: 1px solid #151515 !important;
+    height: 70px !important;
+}
+.contact_us .contact_content .contact_form .submit_btn {
+    border-radius: 30px;
+    font-size: 18px;
+    background: #c38616;
+    border: none;
+    width: 50%;
+    padding: 10px;
+    margin-top: 24px !important;
+}
+
+.contact_us .submit_btn:not(:disabled):not(.disabled):active, .submit_btn:not(:disabled):not(.disabled):active{
+	background: #c38616;
+	border: none;
+}
+.contact_us .submit_btn:hover{
+	background: #ca9027 !important;
+}
+.contact_us .submit_btn:not(:disabled):not(.disabled):active:focus, .contact_us .submit_btn:focus{
+	box-shadow: none;
+}
+.address li {
+    color: #6b6b6b;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.address li a {
+    margin: 0 12px;
+    border-radius: 25px;
+    padding: 4px 14px;
+    color: #656565;
+	background: #1d1d1d;
+}
+.address li img, .address li a img {
+    width: auto;
+    margin-right: 8px;
+}
+
+.contact_us .google_map {
+	height: 713px;
+    overflow: hidden;
+}
+/*====== Contact Page ======*/
+
+
+/*====== About Us Page ======*/
+.about_banner{
+	background: url(../images/about_banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.about_banner .title {
+    font-size: 64px;
+    padding: 76px 0;
+}
+.about_content {
+    margin-top: 34px;
+}
+.about_content .sub_title {
+    color: #c38616;
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+.about_photo {
+    width: 400px;
+    border: 1px solid #c38616;
+    padding: 5px;
+    margin-right: 20px;
+}
+.about_content .des {
+    color: #504c4c;
+    font-size: 18px;
+    line-height: 30px;
+}
+/*====== About Us Page ======*/
+
+
+
+/***** ========   Start Meadia Css   ======== *****/
+
+/* 1700px */
+@media screen and (max-width: 1700px) {
+	
+	
+	
+}
+
+
+
+/* 1564px */
+@media screen and (max-width: 1564px) {
+	
+	
+	
+	
+	
+}
+
+/* 1200px */
+@media screen and (max-width: 1200px) {
+	
+	.about_sec {
+		margin: 30px auto;
+		height: 300px;
+		overflow: hidden;
+	}
+	.about_sec .about_content {
+		width: 54%;
+		min-height: 300px;
+	}
+	
+	.seller_sec .seller_content.text_content {
+		height: calc(100vh - 86%);
+	}
+	
+	.fashion_sec .fashion_photo {
+		height: 340px;
+		background-size: 100% !important;
+	}
+	.fashion_sec .text_content .fashion_title {
+		font-size: 14px;
+		letter-spacing: 5px;
+		height: 340px;
+	}
+	.fashion_sec .text_content .fashion_title span {
+		font-size: 24px;
+		padding: 12px !important;
+	}
+	.seller_sec.featured_sec {
+		margin: 50px auto;
+	}
+	.seller_sec .seller_content .seller_photo {
+		height: 450px;
+		background-size: auto !important;
+	}
+	.special_discount .des {
+		width: 64%;
+	}
+	.social_sec .social_icon {
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center center;
+		padding: 3px 40px !important;
+	}
+	
+	.footert_sec .about {
+		margin-right: 0px !important;
+	}
+	.footert_sec .link {
+		margin-left: 0 !important;
+		text-align: center;
+	}
+	
+	
+	
+
+
+}
+
+/* 990px */
+@media screen and (max-width: 990px) {
+	
+	.banner_sec {
+		height: 318px;
+	}
+	.about_sec {
+		border: 5px solid #c99339;
+		background-image: none;
+		margin: 40px 20px !important;
+		height: auto;
+	}
+	.about_sec .about_content {
+		width: auto;
+		min-height: auto;
+		padding: 15px !important;
+	}
+	
+	
+	.seller_sec .seller_content.text_content {
+		height: auto;
+		text-align: center;
+	}
+	.service_sec {
+		margin-top: 40px;
+	}
+	
+	.fashion_sec .fashion_photo {
+		height: 260px;
+	}
+	.fashion_sec .text_content .fashion_title {
+		height: 258px;
+	}
+	
+	.social_sec .social_icon {
+		padding: 3px 18px !important;
+	}
+	
+	/* Footert Sec */
+	.footert_sec ul li.about_us{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.footert_sec ul li.f_link {
+		float: none;
+		text-align: center;
+		margin-top: 50px;
+	}
+	.footert_sec ul li ul li {
+		float: none;
+		display: inline-block;
+	}
+	/* Footert Sec */
+
+
+	
+	/* Home Page */
+	.product_thumble .gift_product {
+		width: 44%;
+	}
+	
+	.item_category .category_sec .left_category, .item_category .category_sec .right_category {
+		float: none;
+		width: 100%;
+	}
+	/* Home Page */
+	
+	/* Payment Page */
+	.payment_content ul li {
+		width: 100%;
+		display: block;
+		margin: 0 auto 30px;
+	}
+	.contact_sec ul .order_no {
+		padding: 15px 30px;
+	}
+	/* Payment Page */
+	
+	
+	
+	
+	/* Product View Page */
+	.product_des {
+		display: table;
+	}
+	.product_des .product_text {
+		width: 100%;
+		float: none;
+		display: table-footer-group;
+		text-align: center;
+	}
+	.product_des .product_thumble {
+		padding-left: 0;
+		text-align: center;
+	}
+	.product_des .product_thumble .gift_product {
+		display: inline-block;
+		width: 40%;
+		background: #fff;
+	}
+	.product_sec.product_right .sub_title {
+		text-align: left;
+		border-left: 5px solid #2879fe;
+		border-right: none;
+	}
+	.product_sec.product_right .product_thumble {
+		padding-left: 0;
+		padding-right: 0;
+		display: table-header-group;
+	}
+	/* Product View Page */
+	
+	
+	.get_touch .call_btn {
+		margin: 0px 6px;
+	}
+	
+	
+	/* Contact Us */
+	.contact_us .contact_content {
+		flex-direction: column;
+	}
+	.contact_us .contact_content {
+		flex-direction: column;
+	}
+	.contact_us .contact_content .contact_sec {
+		width: 100% !important;
+	}
+	.contact_us .google_map {
+		width: 100% !important;
+	}
+	/* Contact Us */
+	
+	
+	/* About Us */
+	.about_banner .title {
+		font-size: 48px;
+		padding: 18px 0;
+	}
+	
+	/* About Us */
+}
+
+/* 767px */
+@media screen and (max-width: 767px) {
+	
+	
+	.header_src {
+		position: fixed;
+		right: 0;
+		left: 0;
+		top: 0;
+	}
+	.header_src.position-sticky {
+		position: fixed !important;
+	}
+	
+	.top_header .container-fluid {
+		display: flex;
+		justify-content: center;
+	}
+	.top_header .h_contact li {
+		padding: 0 8px 0 !important;
+		margin: 0 3px 0 !important;
+	}
+	.top_header .h_social {
+		margin-top: 15px;
+	}
+	.top_header .h_social li a {
+		margin: 0 15px 0 !important;
+	}
+	
+	.nav_menu .navbar-collapse {
+		position: absolute;
+		height: calc(100vh - 100%);
+		right: -50%;
+		width: 50%;
+		float: right;
+		background: #bf9445;
+		top: 85px;
+		bottom: 0;
+		display: block;
+		transition: all 0.6s ease-in 0.3s;
+	}
+	.nav_menu .navbar-collapse.show{
+		right: 0;
+	}
+	.nav_menu .navbar-nav li a:hover, .nav_menu .navbar-nav li.active a {
+		color: #5f4923 !important;
+	}
+	.nav_menu .navbar-nav li a {
+		padding: 10px 25px !important;
+		color: #ffe5b7 !important;
+		border-bottom: 1px solid #5f4923;
+		border-top: 1px solid #e4b050;
+	}
+	
+	.banner_sec {
+		padding: 350px 0 0!important;
+		background-size: 100% !important;
+		height: 101px !important;
+		background-position: center 180px !important;
+	}
+	.about_sec {
+		text-align: center !important;
+	}
+	.about_sec .sub_title {
+		font-size: 24px;
+	}
+	.seller_sec .seller_content {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.service_sec .service_content {
+		margin-bottom: 30px;
+	}
+	.fashion_sec .fashion_photo {
+		height: 414px;
+	}
+	.fashion_sec .text_content .fashion_title {
+		height: 415px;
+	}
+	.seller_sec .seller_content {
+		text-align: center;
+	}
+	.seller_sec .seller_content .seller_photo {
+		background-size: cover !important;
+	}
+	.special_discount .discount_from .form-group {
+		width: 100%;
+		margin: 0 !important;
+	}
+	.special_discount .discount_from .now_button {
+		width: 100%;
+		margin-top: 15px;
+	}
+	.special_discount .des {
+		width: auto;
+	}
+	.social_coment .social_sec {
+		margin-top: 10px;
+		float: none;
+		justify-content: space-evenly;
+		width: 100%;
+		border-top: 1px solid #e2e6e9;
+	}
+	
+	.get_touch .sub_title {
+		font-size: 44px;
+		padding: 0px 0 10px;
+	}
+	.get_touch .contact_no {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	.get_touch .contact_no .call_btn {
+		font-size: 26px;
+		padding: 10px;
+		margin: 10px 50px;
+	}
+	.get_touch .call_btn img {
+		width: 54px;
+	}
+	
+	
+	
+	
+	.social_coment {
+		overflow: hidden;
+		text-align: center;
+	}
+	.footert_sec .about_us {
+		text-align: center;
+	}
+	.footert_sec .link {
+		margin: 15px auto;
+	}
+	.contact {
+		text-align: center;
+	}
+	.footert_bottom ul {
+		flex-direction: column;
+		align-items: center;
+	}
+	.footert_bottom .border-right {
+		border-right: none !important;
+		margin: 0 !important;
+		padding-right: 0 !important;
+	}
+	
+	
+	
+	/* Contact Us */
+	.contact_us .contact_content .contact_sec .contact_form {
+		padding: 60px 15px;
+		width: 100%;
+	}
+	.contact_us .contact_content .contact_sec {
+		width: 100% !important;
+		margin-top: 160px !important;
+	}
+	.contact_us .contact_content .contact_form .submit_btn {
+		width: auto;
+		padding: 10px 30px;
+	}
+	/* Contact Us */
+	
+	/* About Us */
+	.about_banner {
+		margin-top: 188px;
+	}
+	.about_banner .title {
+		font-size: 44px;
+		padding: 26px 0;
+	}
+	.about_content .sub_title {
+		margin-bottom: 0;
+		font-size: 38px;
+		text-align: center;
+	}
+	.about_photo {
+		width: 100%;
+		margin-right: 0;
+		float: none !important;
+	}
+	.about_content .des {
+		margin: 15px auto !important;
+		text-align: center;
+		margin-top: 30px;
+	}
+	
+	/* About Us */
+	
+}
+
+
+/* 480px */
+@media screen and (max-width: 480px) {
+	.fashion_sec .fashion_photo {
+		height: 320px;
+	}
+	.fashion_sec .text_content .fashion_title {
+		height: 320px;
+	}
+	
+	
+	/* Contact Us */
+	.contact_us .contact_content .contact_sec .contact_form {
+		padding: 10px 15px;
+	}
+	.contact_phone {
+		flex-direction: column;
+	}
+	.contact_us .contact_phone li {
+		margin-bottom: 20px !important;
+	}
+	.contact_us .contact_content .contact_sec .address {
+		margin-top: 30px;
+	}
+	/* Contact Us */
+}
+
+
+
